@@ -1,8 +1,10 @@
-
-	<% if !@tweets.nil? %>
-		<% @tweets.each do |tweet| %>
-			<p><%= tweet.text %></p><br>
-		<% end %>
+<%counter = 1 %>
+<% if !@tweets.nil? %>
+	<% @tweets.each do |tweet| %>
+		<p><%= counter %>.
+<%= tweet.text %></p>
+		<% counter += 1 %>
 	<% end %>
+<% end %>
 
 

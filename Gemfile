@@ -20,7 +20,7 @@ gem 'shotgun'
 gem 'twitter'
 gem 'awesome_print'
 gem 'byebug'
-
+gem 'omniauth-twitter'
 
 group :test do
   gem 'faker'

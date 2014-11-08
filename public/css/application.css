@@ -4,6 +4,106 @@
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
 }
+
 th {
   text-align: left;
+}
+
+.mybutton {
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	color: buttontext;
+	padding: 2px 6px 3px;
+	border: 2px outset buttonface;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	background-color: buttonface;
+	margin: 0em;
+	font: -webkit-small-control;
+	color: initial;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+}
+.mybutton1 {
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	color: buttontext;
+	padding: 2px 6px 3px;
+	border: 2px outset buttonface;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	background-color: buttonface;
+	margin: 0em;
+	font: -webkit-small-control;
+	color: initial;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	float: left;
+}
+
+.mybutton2 {
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	color: buttontext;
+	padding: 2px 6px 3px;
+	border: 2px outset buttonface;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	background-color: buttonface;
+	margin: 0em;
+	font: -webkit-small-control;
+	color: initial;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	float: right;
+}
+
+.container1 {
+	color: white;
+	margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+	background-color: #00A9FF;
+}
+
+.welcome_msg {
+	float: right;
+	color: #0A83CC;
+}
+
+h1 {
+	text-align: center;
+	color: #00BACC;
+}
+
+h2, h3 {
+	color: #00BACC;
+}
+
+.container2 {
+	color: #00A9FF;
 }

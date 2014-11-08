@@ -40,29 +40,41 @@
         });
     });
  </script>
-
 <div class="container">
-  <h1>Welcome to Post A Tweet!</h1>
-  <p>Hello, world!</p>
-</div>
-<div class="container">
-	<br>
-	<body bgcolor="#ffffff" alink="#0000be"><b>	Tweet Something</b><br><br>
-	  <form method="post" action="/tweet" id="post_tweet"><input type="hidden" name="post_tweet" value="item?id=8548992">
-	    <table border="0"><tr><td>Tweet:</td><td><input type="text" name="tweet_msg" size="20" autocorrect="off" autocapitalize="off"></td></tr></table><br>
-	    <input type="submit" value="Submit">
-	  </form>
-	</body>
+  <%= erb :_nav_bar %>
 </div>
 
+
+
 <div class="container">
-	<br>
-	<div id="wait-msg">
-		<img src="/images/ajax-loader.gif"> Updating</img>
+  <h1> Welcome <%= username %> to Post A Tweet!&nbsp; </h1>
+</div>
+<% if login? %>
+	<div class="container1">
+		<br>
+		<body><b> Compose New Tweet </b><br><br>
+		  <form method="post" action="/tweet" id="post_tweet"><input type="hidden" name="post_tweet" value="item?id=8548992">
+		    <table border="0"><tr><td><textarea name="tweet_msg" rows="4" cols="80" autocorrect="on" autocapitalize="off"></textarea></td></tr></table><br>
+		    <input class="mybutton1" type="submit" value="Submit">
+		    <br>
+		  </form>
+		</body>
 	</div>
-	<div id="show_tweet">
 
+	<div class="container">
+		<div class="container2">
+			<br>
+			<b>Your 10 Most Recent Tweets:</b>
+			<br>
+		</div>
+		<div id="wait-msg">
+			<br>
+			<img src="/images/ajax-loader.gif"> Updating</img>
+		</div>
+		<div id="show_tweet">
+		</div>
 	</div>
-</div>
+<% else %>	
+<% end %>
 
 
