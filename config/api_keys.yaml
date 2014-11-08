@@ -1,5 +1,0 @@
-development: &defaults
-  twitter_consumer_key_id: "3I8T1INDDdCHHA76ZkpTLTaZl"
-  twitter_consumer_secret_key_id: "DQOruJr9fPJkno49RqGqalsuVSnl5WxPlpZ11HPzmoG6YRMs2y"
-  twitter_consumer_access_token_id: "80399067-GWpqOXTzPkPlgehK3j5IvPvJekf7j7135E3tjFTts"
-  twitter_consumer_access_token_secret_id: "7AojD8q16S6SAeJ4qKChN2gJyQ4x0SscQriP4L4Y8oZUI"
