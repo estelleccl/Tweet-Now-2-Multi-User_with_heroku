@@ -26,3 +26,4 @@ bin/
 .env
 *.swp
 *.yaml
+config/api_keys.yaml
