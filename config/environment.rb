@@ -41,7 +41,7 @@ require 'twitter'
 require 'yaml'
 require 'omniauth-twitter'
 
-#  d
+#  Setup Login through Twitter
 
 use OmniAuth::Builder do
   provider :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
