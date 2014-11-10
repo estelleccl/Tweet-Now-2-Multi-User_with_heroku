@@ -10,6 +10,7 @@ post '/tweet' do
   halt(401,'Not Authorized') unless admin?
   @user = TwitterUser.find_by(twitter_username: session[:username])
   @user.post_tweet!(params[:tweet_msg])
+  # @tweets = @user.fetch_tweets!
   redirect '/tweet'
 end
 
@@ -26,4 +27,5 @@ end
  
 get '/private' do
   halt(401,'Not Authorized') unless admin?
-  "This is
+  "This is the private page - members only"
+end
