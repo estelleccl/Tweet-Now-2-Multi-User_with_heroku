@@ -49,5 +49,5 @@ end
 
 #Set up queue management
 
-require 'sidekiq'
-require 'redis'
+# require 'sidekiq'
+# require 'redis'
