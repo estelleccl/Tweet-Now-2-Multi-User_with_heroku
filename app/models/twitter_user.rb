@@ -8,7 +8,7 @@ class TwitterUser < ActiveRecord::Base
       client.update(tweet_msg)
    end
 
-   def self.find_by_username(user_info)
+   def self.find_or_created_by_username(user_info)
       if TwitterUser.exists?(twitter_username: user_info.info.nickname)
          user = TwitterUser.find_by(twitter_username: user_info.info.nickname)
          user.update(access_token: user_info.extra.access_token.token, access_token_secret: user_info.extra.access_token.secret)
