@@ -22,6 +22,8 @@ gem 'awesome_print'
 gem 'byebug'
 gem 'omniauth-twitter'
 gem 'rspec'
+gem 'sidekiq'
+gem 'redis'
 
 group :test do
   gem 'faker'

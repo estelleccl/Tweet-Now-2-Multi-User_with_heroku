@@ -46,3 +46,8 @@ require 'omniauth-twitter'
 use OmniAuth::Builder do
   provider :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
 end
+
+#Set up queue management
+
+require 'sidekiq'
+require 'redis'
