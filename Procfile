@@ -1,1 +1,1 @@
-web: bundle exec shotgun --server=thin --port=3000 config.ru
+web: bundle exec thin start -R config.ru -e $RACK_ENV -p $PORT
